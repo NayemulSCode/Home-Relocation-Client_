@@ -1,0 +1,36 @@
+.footer-custom{
+    background-color: #2C3F5D;
+}
+.social-media .icon{
+    height: 40px;
+    width: 40px;
+    color: #1cc7c1;
+    border-radius: 50%;
+    border: 1px solid #6ACECE;
+    padding: 10px;
+}
+.social-media .active-icon{
+    background-color: #6ACECE ;
+    color:white;
+}
+.footer-col ul li a{
+    text-decoration: none;
+}
+.footer-col ul li a:hover{
+   color: darkorange;
+}
+@media( max-width: 765px){
+    .social-media .icon{
+        height: 20px;
+        width: 20px;
+        color: #d7e4e3;
+        border: 0px;
+        padding: 0px;
+    }
+    .copyrightText{
+        font-size: 12px;
+    }
+    .Mobile-version{
+        text-align: center;
+    }
+}

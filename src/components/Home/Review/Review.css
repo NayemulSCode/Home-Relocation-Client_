@@ -1,0 +1,18 @@
+.reviews{
+    background-color: #F8F8F8;
+}
+.reviews .card{
+    border-color: transparent;
+}
+.reviews .card .card-footer{
+    background: transparent;
+    border: 0;
+}
+@media (max-width:765px){
+    .reviewRow{
+        flex-direction: column;
+    }
+    .section-header{
+        text-align: center;
+    }
+}

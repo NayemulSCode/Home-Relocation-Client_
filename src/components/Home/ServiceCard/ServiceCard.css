@@ -1,0 +1,16 @@
+.singleService{
+    border: 0px;
+    padding: 0px;
+    width: 30%;
+}
+.singleService span{
+    font-weight: bold;
+}
+@media (max-width: 675px){
+    .mobile-responsive{
+        flex-direction: column;
+    }
+    .singleService{
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+.blogSection{
+    background-color:#f3f0f0;
+}
+.blogSection h1{
+    color: #993337;
+    text-transform: uppercase;
+}
+.blogPosts img{
+    width: 100%;
+}
+.singleBlog{
+    border: 0px;
+    padding: 0px;
+}
+.singleBlog h5{
+    color: #DB1B1B;
+}
