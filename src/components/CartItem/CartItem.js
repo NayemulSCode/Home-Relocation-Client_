@@ -9,7 +9,7 @@ const CartItem = () => {
     const [service, setService]= useState([]);
     const cartService = service.find(carId => carId._id == id)
     useEffect(() =>{
-        fetch('http://localhost:5000/services')
+        fetch('https://boiling-dusk-71900.herokuapp.com/services')
         .then(res => res.json())
         .then(data => {
             setService(data);

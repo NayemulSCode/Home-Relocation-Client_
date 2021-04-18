@@ -14,7 +14,7 @@ const AddReview = () => {
             review: info, 
             orderTime: new Date()
           };
-          fetch('http://localhost:5000/addReview',{
+          fetch('https://boiling-dusk-71900.herokuapp.com/addReview',{
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'

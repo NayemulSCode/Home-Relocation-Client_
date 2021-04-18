@@ -13,7 +13,7 @@ const ServiceCard = ({service}) => {
             {
                  service.image ? <img style={{height: '200px'}} src={`data:image/png;base64,${service.image.img}`}/>
                  :
-                <img style={{height: '200px'}} className="img-fluid mb-3" src={`http://localhost:5000/services${service.img}`} alt=""/>
+                <img style={{height: '200px'}} className="img-fluid mb-3" src={`https://boiling-dusk-71900.herokuapp.com/services${service.img}`} alt=""/>
                 }
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>

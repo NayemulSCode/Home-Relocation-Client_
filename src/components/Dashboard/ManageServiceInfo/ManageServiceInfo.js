@@ -6,7 +6,7 @@ const ManageServiceInfo = ({services}) => {
         setService(services);
     },[services])
    const handleDeleteService = id =>{
-       fetch(`http://localhost:5000/services/${id}`,{
+       fetch(`https://boiling-dusk-71900.herokuapp.com/services/${id}`,{
            method:'DELETE'
        })
        .then(res => res.json())

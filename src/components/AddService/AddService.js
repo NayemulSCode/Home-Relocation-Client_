@@ -22,7 +22,7 @@ const AddService = () => {
         formData.append('description', info.description);
         formData.append('area', info.area);
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://boiling-dusk-71900.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })
