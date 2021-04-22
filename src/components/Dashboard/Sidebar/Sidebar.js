@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus,faCog,faShoppingBasket, faSignOutAlt, faThLarge, faGripHorizontal, faUserCheck, faHome,faComment } from '@fortawesome/free-solid-svg-icons';
 import { UserContext } from '../../../App';
+import { handleSignOut } from '../../Login/Login';
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
@@ -16,6 +17,16 @@ const Sidebar = () => {
         .then(res => res.json())
         .then(data => setIsAdmin(data))
     },[])
+    //logout
+    const signOut = () => {
+        handleSignOut()
+        .then(res => {
+            handleResponse(res);
+        })
+      }
+      const handleResponse = res=>{
+        setLoggedInUser(res)
+      }
     return (
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
             <ul className="list-unstyled">
@@ -62,7 +73,7 @@ const Sidebar = () => {
                 </li>
             </ul>
         <div>
-            <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
+            <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span onClick={signOut}>Logout</span></Link>
         </div>
     </div>
     );

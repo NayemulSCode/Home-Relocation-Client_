@@ -11,7 +11,7 @@ const Services = () => {
         })
     },[])
     return (
-        <section style={{backgroundColor:'#F8F8F8'}} className="serviceSection py-5">
+        <section id="servicesSection" style={{backgroundColor:'#F8F8F8'}} className="serviceSection py-5">
             <div className="container">
                 <div className="sectionHeader text-center">
                     <h1>Our Services</h1>
